@@ -18,11 +18,12 @@ document.querySelector(".check").addEventListener("click", function () {
     // When player wins
   } else if (guess === secretNumber) {
     // document.querySelector('.message').textContent = '🎉 Correct Number!';
+
     displayMessage("🎉 Correct Number!");
     document.querySelector(".number").textContent = secretNumber;
-    document.querySelector("body").style.backgroundColor = "#dbba00";
-    document.querySelector("body").style.backgroundColor = "#dbba00";
+
     document.querySelector(".number").style.width = "30rem";
+    document.querySelector("body").style.backgroundColor = "#dbba00";
 
     if (score > highscore) {
       highscore = score;
